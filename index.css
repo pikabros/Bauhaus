@@ -1,0 +1,153 @@
+#contenedor {
+    display: grid;
+    grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8";
+    gap: 0px;
+    border: 10px black solid;
+
+}
+
+.altura {
+    height: 50px;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+    min-height: 200px;
+}
+
+.item6 {
+    grid-area: item6;
+}
+
+.item7 {
+    grid-area: item7;
+}
+
+.item8 {
+    grid-area: item8;
+}
+
+.colorRojo {
+    background-color: red;
+}
+
+.colorAzul {
+    background-color: blue;
+}
+
+.colorAmarillo {
+    background-color: yellow;
+}
+
+.borde {
+    border: 5px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+    #contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "item3 item3 item3"
+            "item5 item5 item5"
+            "item6 item7 item4"
+            "item1 item2 item2"
+            "item8 item2 item2"
+            "item8 item2 item2";
+    }
+
+    .item2 {
+        height: 585px;
+    }
+
+    .item1 {
+
+        height: 100px;
+    }
+        
+    .item8 {
+
+        height: 475px;
+        
+    } 
+
+    h1,  p{
+        text-align: right;
+        margin-right: 5%;
+    }
+}
+
+
+ @media only screen and (min-width: 1024px)  {   
+    #contenedor{   
+         grid-template-columns: 1fr 2fr 1fr 1fr 1fr;  
+         grid-template-areas:   
+        "item1 item2  item3 item3 item3"
+        "item8 item2 item5 item5 item5"
+        "item8 item2  item6 item7 item4";
+           
+    }
+
+    .item3{
+        height: 200px;
+    }
+    
+    .item1{
+        height: 200px;
+    }
+
+    .item8{
+        height: 750px;
+    }
+    .item2{
+        height: 960px;
+    }
+
+    .item5{
+        height: 590px;
+        
+    }
+
+    .item6 ,.item7 ,.item4{
+        height: 150px;
+    }
+    
+
+
+}  
