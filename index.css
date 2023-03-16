@@ -120,8 +120,7 @@ body {
          grid-template-areas:   
         "item1 item2  item3 item3 item3"
         "item8 item2 item5 item5 item5"
-        "item8 item2  item6 item7 item4";
-           
+        "item8 item2  item6 item7 item4";  
     }
 
     .item3{
